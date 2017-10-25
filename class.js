@@ -28,6 +28,8 @@ function LinkedList(start = null){
 	};
 
 	LinkedList.prototype.printList = function method(){
+		newLine(3)
+		cout("Printing the LinkedList : ","\n*2")
 		
 		var i = this.start;
 		while(i != null){
@@ -37,3 +39,5 @@ function LinkedList(start = null){
 		}
 		
 	}
+	
+	

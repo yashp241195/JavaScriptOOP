@@ -36,3 +36,7 @@ function cout(string,end = null){
    	var out = string + delimiter;
 	document.write(out);
 }
+
+function newLine(string){
+	cout("","\n*"+string.toString());
+}

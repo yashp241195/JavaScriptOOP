@@ -1,0 +1,14 @@
+.table_class{
+	border: 1px solid black;
+	border-collapse:collapse;
+}
+.table_row,.table_row > th,.table_row > td{
+	border: 1px solid black;
+}
+
+.table_row > th{
+	color:red;
+}
+.table_row > td{
+	color:blue;
+}

@@ -2,11 +2,13 @@
 
 // Class defination with constructor
 
+// Class Node
 function Node(data,next = null){
 	this.data = data;
 	this.next = next;
 }
 
+// Class LinkedList
 function LinkedList(start = null){
 	this.start = start;
 }

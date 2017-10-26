@@ -16,6 +16,7 @@ function LinkedList(start = null){
 	// defining the methods of Linked List
 
 	LinkedList.prototype.insert = function method(data) {
+		cout("Inserting "+data,"\n");
 		if(this.start == null){
 			this.start = new Node(data);
 
@@ -24,7 +25,7 @@ function LinkedList(start = null){
 			while(i.next != null){
 				i=i.next;
 			}
-			cout("Inserting "+i.data,"\n")
+			
 			i.next = new Node(data);
 		}
 	};

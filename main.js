@@ -8,6 +8,7 @@ function main(){
 	LL.insert(2);
 	LL.insert(3);
 	LL.insert(4);
+	LL.printList();
 
 	arr = [11,12,11,11];
 	arr2 = [[9,8,7,6],[2,5,1,0]];
@@ -17,7 +18,7 @@ function main(){
 	
 	print2DArray(arr2,0,1,0,3);
 
-	LL.printList();
+	
 }
 		
 main();

@@ -46,7 +46,24 @@ function newLine(string = 1){
 	cout("","\n*"+string.toString());
 }
 
+function view(object,name = "undefined"){
+	if(typeof(object) == "object"){
+		cout("Can't view non premitive data type, use printObject() instead");
+	}else{
+		
+		Objtype = typeof(object).toString();
+		value = object.toString();
 
+		table = "<table class = \"table_class\">"; 
+		table += "<tr class = \"table_row\"><th  style=\"color:purple;\">VariableName</th><td>"+name+"</td></tr>";
+		table += "<tr class = \"table_row\"><th  style=\"color:green;\">Value</th><td>"+value+"</td></tr>";
+		table += "<tr class = \"table_row\"><th  style=\"color:green;\">Data Type</th><td>"+Objtype+"</td></tr>";
+		table += "</table>";
+		newLine(2);
+		cout(table);
+
+	}
+}
 
 function print1DArray(arr,fromIndex,toIndex,is2D = false,x="Data"){
 	if (arr != null){
@@ -162,7 +179,7 @@ function print2DArray(arr,fromRowIndex,toRowIndex,fromColumnIndex,toColumnIndex,
 }
 
 
-function printObject(object,heteroId = 0,isFloat = false){
+function printObject(object,innerObjectelementNo = 0,isFloat = false){
 	
 	ClassName = object.constructor.name
 
@@ -185,7 +202,7 @@ function printObject(object,heteroId = 0,isFloat = false){
 	        					alpha = value[key2];
 	        				}
 
-		        				if(i==heteroId){
+		        				if(i==innerObjectelementNo){
 		        						break;
 		        				}
 	        				i++;	
@@ -198,7 +215,7 @@ function printObject(object,heteroId = 0,isFloat = false){
 	        			}
 	        			
 	        		
-	        			value =heteroProperty[heteroId]+" : "+alpha;
+	        			value =heteroProperty[innerObjectelementNo]+" : "+alpha;
 	        		}
 	        	}
 	        	

@@ -36,13 +36,17 @@ function LinkedList(start = null){
 	LinkedList.prototype.printList = function method(){
 		newLine(3)
 		cout("Printing the LinkedList : ","\n*2")
-		
+		floatLeft = true;
 		var i = this.start;
-		while(i.next != null){
-			printObject(i,1,true);	
+		while(i != null){
+			if(i.next == null){
+				// Donot apply float:left on the table of last Node
+				floatLeft =false;
+			}
+			printObject(i,1,floatLeft);	
 			i = i.next;
 		}
-		printObject(i,1);
+		
 		
 		
 	};

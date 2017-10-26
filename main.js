@@ -24,9 +24,19 @@ function main(is){
 	newLine(3);
 	var car = {type:"Fiat", model:"500", color:"white"};
 	printObject(car);
-	var a = "Yash";
+
+	var a = 123;
 	view(a,"a");
+
+	var b = 4.58;
+	view(b,"b");
+
+	var c = "Yash";
+	view(c,"c");
 			
+	var d = false;
+	view(d,"d");
+
 	newLine(5);		
 }
 

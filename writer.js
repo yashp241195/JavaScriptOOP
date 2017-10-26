@@ -51,7 +51,7 @@ function view(object,name = "undefined"){
 		cout("Can't view non premitive data type, use printObject() instead");
 	}else{
 		
-		Objtype = typeof(object).toString();
+		Objtype = typeof(object);
 		value = object.toString();
 
 		table = "<table class = \"table_class\">"; 

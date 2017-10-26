@@ -6,7 +6,10 @@
 function Node(data,next = null){
 	this.data = data;
 	this.next = next;
+	this.testArray = [1,"s",2,5];
+	
 }
+
 
 // Class LinkedList
 function LinkedList(start = null){
@@ -17,6 +20,7 @@ function LinkedList(start = null){
 
 	LinkedList.prototype.insert = function method(data) {
 		cout("Inserting "+data,"\n");
+
 		if(this.start == null){
 			this.start = new Node(data);
 
@@ -25,7 +29,6 @@ function LinkedList(start = null){
 			while(i.next != null){
 				i=i.next;
 			}
-			
 			i.next = new Node(data);
 		}
 	};
@@ -35,12 +38,13 @@ function LinkedList(start = null){
 		cout("Printing the LinkedList : ","\n*2")
 		
 		var i = this.start;
-		while(i != null){
-			
-			cout(i.data,"\t*3");
+		while(i.next != null){
+			printObject(i,1,true);	
 			i = i.next;
 		}
+		printObject(i,1);
 		
-	}
+		
+	};
 	
 	

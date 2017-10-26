@@ -19,7 +19,7 @@ function cin(arr){
 function cout(string,end = null){
 	
 	delimiter = '';
-	counter = 1
+	counter = 1;
 	
 	if(end != null && end.length > 1){
 		

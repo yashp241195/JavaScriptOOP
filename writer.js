@@ -1,3 +1,14 @@
+function loadstyle(string = "online"){
+	var online = "<link rel=\"stylesheet\" href=\" https://yashp241195.github.io/JavaScriptOOP/outputstyle.css\">";
+	var offline = "<link rel=\"stylesheet\" href=\"outputstyle.css\">";
+	if(string == "local"){
+		cout(offline);
+	}else{
+		cout(online);
+	}
+}
+
+
 // Use to write on the HTML page as Console
 function cin(arr){
 	temp = arr.shift();

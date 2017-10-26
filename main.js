@@ -2,8 +2,8 @@
 // main JavaScript
 
 function main(is){
-
-
+	
+	loadstyle();
 	
 	var LL = new LinkedList();
 	cout("Console Output","\n*2");

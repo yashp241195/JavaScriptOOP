@@ -20,11 +20,13 @@ function main(is){
 	
 	print1DArray(arr,0,3)
 	print2DArray(arr2,0,1,0,3);
+	
 	newLine(3);
 	var car = {type:"Fiat", model:"500", color:"white"};
 	printObject(car);
-	
-
+	var a = "Yash";
+	view(a,"a");
 			
+	newLine(5);		
 }
 

@@ -3,7 +3,7 @@
 
 function main(is){
 	
-	loadstyle();
+	loadstyle("local");
 	
 	var LL = new LinkedList();
 	cout("Console Output","\n*2");

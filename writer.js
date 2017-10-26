@@ -1,4 +1,9 @@
 // Use to write on the HTML page as Console
+function cin(arr){
+	temp = arr.shift();
+	return temp
+}
+
 
 function cout(string,end = null){
 	
@@ -37,7 +42,7 @@ function cout(string,end = null){
 	document.write(out);
 }
 
-function newLine(string){
+function newLine(string = 1){
 	cout("","\n*"+string.toString());
 }
 
@@ -55,8 +60,13 @@ function print1DArray(arr,fromIndex,toIndex,is2D = false,x="Data"){
 				
 				table = "<table class = \"table_class\">";
 				if(is2D == false){
-					newLine(2);
-					IndexData = "<tr class = \"table_row\"><th style=\"color:green;\">Index </th>";
+
+					
+					y = toIndex - fromIndex + 1;
+					IndexData = "<tr class = \"table_row\">";
+					IndexData += "<tr class = \"table_row\"><th style=\"color:purple;\">ClassName</th>";
+					IndexData += "<th style=\"color:DodgerBlue;\" colspan=\""+y+"\">Array</th></tr>";
+					IndexData += "<tr class = \"table_row\"><th style=\"color:green;\">Index </th>";
 				}
 
 							
@@ -75,6 +85,7 @@ function print1DArray(arr,fromIndex,toIndex,is2D = false,x="Data"){
 				}else{
 					IndexData += "</tr>";
 					table += IndexData + tableData +"</table>";
+					newLine(1);
 					cout(table);
 					newLine(1);
 				}
@@ -91,12 +102,20 @@ function print1DArray(arr,fromIndex,toIndex,is2D = false,x="Data"){
 		}
 	}
 }
-function print2DArray(arr,fromRowIndex,toRowIndex,fromColumnIndex,toColumnIndex){
+function print2DArray(arr,fromRowIndex,toRowIndex,fromColumnIndex,toColumnIndex,Objtype = "Array",isObj = false,isfloat =false){
 
-
+	floatLeft="";
 			
 	if(arr != null){
-		newLine(2);
+		if(!isObj){
+			newLine();
+			newLine();
+		}
+
+		if(isfloat){
+			floatLeft = "style=\"float:left;\"";
+		}
+
 	
 		MaxRowIndex = arr.length - 1
 		MaxColIndex = arr[0].length - 1
@@ -105,9 +124,15 @@ function print2DArray(arr,fromRowIndex,toRowIndex,fromColumnIndex,toColumnIndex)
 			
 			if(fromColumnIndex <= toColumnIndex && fromColumnIndex >= 0 && toColumnIndex<= MaxColIndex){
 				
-				//creating Index
-				table = "<table class = \"table_class\">";
-				Index = "<tr class = \"table_row\"><th style=\"color:green;\">Index</th>";
+				
+								
+				table = "<table "+floatLeft+" class = \"table_class\">";
+				x = toColumnIndex-fromColumnIndex + 1;
+				Index = "<tr class = \"table_row\"><th style=\"color:purple;\">ClassName</th>";
+				Index +="<th style=\"color:DodgerBlue;\"  colspan=\""+x+"\">"+Objtype+"</th></tr>";
+
+
+				Index += "<tr class = \"table_row\"><th style=\"color:green;\">Index</th>";
 				for (var i = fromColumnIndex; i <= toColumnIndex; i++) {
 					Index += "<th>"+i+"</th>";
 				}
@@ -120,7 +145,7 @@ function print2DArray(arr,fromRowIndex,toRowIndex,fromColumnIndex,toColumnIndex)
 				}
 				table += "</table>";
 
-				cout(table)
+				cout(table);
 			
 			}else{		
 				newLine(2);
@@ -133,5 +158,64 @@ function print2DArray(arr,fromRowIndex,toRowIndex,fromColumnIndex,toColumnIndex)
 			cout("Can't View the Array, Error: Row : fromIndex is greater than toIndex ","\n*2");
 		}
 	}
+	
+}
+
+
+function printObject(object,heteroId = 0,isFloat = false){
+	
+	ClassName = object.constructor.name
+
+	Value = [];
+	
+	var alpha = "$";
+
+	for(key in object) {
+	    if(object.hasOwnProperty(key)) {
+	        var value = object[key];
+	        if(typeof(value) == "object"){
+	        	if(value != null){
+
+	        		if(value.constructor.name != "Array"){
+	        			heteroProperty = Object.getOwnPropertyNames(object);
+	        			
+	        			i = 0;
+	        			for(key2 in value){
+	        				if(!Object.hasOwnProperty(key2)){
+	        					alpha = value[key2];
+	        				}
+
+		        				if(i==heteroId){
+		        						break;
+		        				}
+	        				i++;	
+	        			}
+	        			if(typeof(alpha) =="Array" || typeof(alpha) =="string" || typeof(alpha) =="number"){
+	        					
+	        			}else{
+	        				alpha = "$*";
+
+	        			}
+	        			
+	        		
+	        			value =heteroProperty[heteroId]+" : "+alpha;
+	        		}
+	        	}
+	        	
+	        }
+	        Value.push(value);
+	    }
+	}
+
+	var PropertyNames = [];
+	PropertyNames = Object.getOwnPropertyNames(object);
+	maxIndex = PropertyNames.length-1;
+	
+	matrix = [];
+
+	matrix.push(PropertyNames);
+	matrix.push(Value);
+
+	print2DArray(matrix,0,1,0,maxIndex,ClassName,true,isFloat);
 	
 }

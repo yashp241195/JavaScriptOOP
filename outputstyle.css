@@ -8,7 +8,9 @@
 
 .table_row > th{
 	color:red;
+	padding:5px 10px;
 }
 .table_row > td{
 	color:blue;
+	padding:5px 10px;
 }

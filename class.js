@@ -43,7 +43,7 @@ function LinkedList(start = null){
 				// Donot apply float:left on the table of last Node
 				floatLeft =false;
 			}
-			printObject(i,1,floatLeft);	
+			printObject(i,0,floatLeft);	
 			i = i.next;
 		}
 		

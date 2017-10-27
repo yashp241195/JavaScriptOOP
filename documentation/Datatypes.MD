@@ -104,7 +104,7 @@ Open the main.js file
 So far we have learned how to perform basic input output operations and visualization of premitive data types. It's time 
 to move on to the next topic in which we will learn how to create our own class and it's visualization.
 
-Click [here]() to go to next slide
+Click [here](https://github.com/yashp241195/JavaScriptOOP/blob/master/documentation/class.MD) to go to next slide
 
 [previous](https://github.com/yashp241195/JavaScriptOOP/blob/master/documentation/HelloWorld.MD)
 

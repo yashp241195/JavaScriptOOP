@@ -12,7 +12,9 @@
     step 3 : Open index.html in text editor like sublime or notepad and check 
              whether all required files are linked or not to index.html
      
+#### index.html     
      <!-- index.html-->       
+     
      <!DOCTYPE html>
       <html lang="en">
       <head>
@@ -67,7 +69,7 @@
       </html>             
      
 
-Now, you are ready to go, Click [here](https://github.com/yashp241195/JavaScriptOOP/edit/master/documentation/HelloWorld.MD) to read the documentation 
+Now, you are ready to go, Click [here](https://github.com/yashp241195/JavaScriptOOP/blob/master/documentation/HelloWorld.MD) to read the documentation 
 
 Author : Yash Pratap
 

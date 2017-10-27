@@ -1,4 +1,4 @@
-# Data Types and their Visualizations
+# Data Types and Visualizations
 
 ## view, printObject, print1DArray, print2DArray
 

@@ -54,6 +54,7 @@ Open the main.js file
             printObject(object) :
             
           */
+          newLine(3);
           
            var car = {type:"Fiat", model:"500", color:"white"};
            printObject(car);
@@ -95,6 +96,10 @@ Open the main.js file
             newLine(5);
       }
 
+### Output
+
+<img src="https://github.com/yashp241195/JavaScriptOOP/blob/master/documentation/img/out2.png" height="600" width="400">
+<img src="https://github.com/yashp241195/JavaScriptOOP/blob/master/documentation/img/out3.png" height="600" width="400">
 
 So far we have learned how to perform basic input output operations and visualization of premitive data types. It's time 
 to move on to the next topic in which we will learn how to create our own class and it's visualization.

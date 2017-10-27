@@ -76,7 +76,7 @@ This is an open source project which helps to visualize the algorithms easily.
       </html>             
      
 
-Now, we are ready to go, Click [here](https://github.com/yashp241195/JavaScriptOOP/blob/master/documentation/HelloWorld.MD) to read the documentation sequentially. 
+Now, we are ready to go, Click [here](https://github.com/yashp241195/JavaScriptOOP/blob/master/documentation/HelloWorld.MD) to read the documentation. 
 
 Author : Yash Pratap
 

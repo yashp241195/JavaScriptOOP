@@ -2,7 +2,7 @@
    
 This is an open source project which helps to visualize the algorithms easily.
 
-#### Check the list of Functions in this library : [here](https://github.com/yashp241195/JavaScriptOOP/blob/master/documentation/List_of_functions.MD)
+#### Check the list of functions in this library : [here](https://github.com/yashp241195/JavaScriptOOP/blob/master/documentation/List_of_functions.MD)
 
 ##### Click [here](https://yashp241195.github.io/JavaScriptOOP) to see the demo
 
@@ -76,7 +76,7 @@ This is an open source project which helps to visualize the algorithms easily.
       </html>             
      
 
-Now, you are ready to go, Click [here](https://github.com/yashp241195/JavaScriptOOP/blob/master/documentation/HelloWorld.MD) to read the documentation 
+Now, we are ready to go, Click [here](https://github.com/yashp241195/JavaScriptOOP/blob/master/documentation/HelloWorld.MD) to read the documentation sequentially. 
 
 Author : Yash Pratap
 

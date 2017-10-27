@@ -1,4 +1,4 @@
-## Hello World
+# First Program : Hello World
 
 Earlier, we saw the implementation of index.html and setup. 
 Now, we are ready to write our first program using this 
@@ -6,7 +6,7 @@ JavaScript based library.
 
     Step 1 : Open the main.js file 
 
-# Basic Input Output Operations (cin,cout,newLine)
+## Basic Input Output Operations (cin,cout,newLine)
 
 #### main.js
     
@@ -83,6 +83,11 @@ JavaScript based library.
            
 	
       }
-  
-    
-    
+
+
+Now we are ready to move on to the visulization part which is the heart of this project.In next slide we will see how to visualize 
+premitive data types such as int,char,boolean,arrays etc
+
+Click [here]() to go to next slide
+
+[previous](https://github.com/yashp241195/JavaScriptOOP/blob/master/README.md)

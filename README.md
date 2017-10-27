@@ -4,7 +4,7 @@ This is an open source project which helps to visualize the algorithms easily.
 
 #### Check the list of functions in this library : [here](https://github.com/yashp241195/JavaScriptOOP/blob/master/documentation/List_of_functions.MD)
 
-##### Click [here](https://yashp241195.github.io/JavaScriptOOP) to see the demo
+##### Click [here](https://yashp241195.github.io/VisualizeJS/) to see the demo
 
 ### Getting Stated
 

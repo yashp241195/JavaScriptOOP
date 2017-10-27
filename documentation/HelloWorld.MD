@@ -88,6 +88,6 @@ JavaScript based library.
 Now we are ready to move on to the visulization part which is the heart of this project.In next slide we will see how to visualize 
 premitive data types such as int,char,boolean,arrays etc
 
-Click [here]() to go to next slide
+Click [here](https://github.com/yashp241195/JavaScriptOOP/blob/master/documentation/Datatypes.MD) to go to next slide
 
 [previous](https://github.com/yashp241195/JavaScriptOOP/blob/master/README.md)

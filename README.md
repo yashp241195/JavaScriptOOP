@@ -1,6 +1,6 @@
 # Visualize JS 
    
-    This is an open source project which helps to visualize the algorithms easily.
+This is an open source project which helps to visualize the algorithms easily.
 
 #### Check the list of Functions in this library : [here](https://github.com/yashp241195/JavaScriptOOP/blob/master/documentation/List_of_functions.MD)
 

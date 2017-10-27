@@ -1,6 +1,6 @@
 # Data Types and their Visualizations
 
-# First Program : Hello World
+## view, printObject, print1DArray, print2DArray
 
 Earlier, we saw the implementation of basic input output operations(cin,cout). 
 Now, we are ready to start the visualization part.
@@ -60,10 +60,39 @@ Open the main.js file
            
            /*
            
-            Arrays
+            Arrays : 
+                1) 1-Dimentional Array
+                    fromIndex = from which Index you wish to visualize
+                    toIndex = to which index you wish to visualize
+                
+                print1DArray(array,fromIndex,toIndex)
+                
+                2) 2-Dimentional Array
+                    fromIndex = from which column Index
+                    toIndex = to which column index
+                    
+                    fromRowIndex = from which row Index you wish to visualize
+                    toRowIndex = to which row index you wish to visualize 
+                    fromColumnIndex = from which Column Index you wish to visualize
+                    toColumnIndex = to which Column index you wish to visualize 
+                
+                print2DArray(Array,fromRowIndex,toRowIndex,fromColumnIndex,toColumnIndex)
+                
+               In JavaScript,
+                 Heterogeneous Arrays are also supported means:
+                 var Array = [1,2,3,"Yash",3,7,false,true]; is also valid
+                 we already know by conventional defination Array is the collection of homogeneous datatypes
+                 stored at contiguous memory location
+            
            
            */
-      
+            arr = ["YY",12,false,11.1]; 
+            arr2 = [[9,8,"alpha",6],[2,true,1,0]];
+
+            print1DArray(arr,0,3)
+            print2DArray(arr2,0,1,0,3);
+           
+            newLine(5);
       }
 
 

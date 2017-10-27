@@ -6,7 +6,7 @@
 function Node(data,next = null){
 	this.data = data;
 	this.next = next;
-	this.testArray = [1,"s",2,5];
+	//this.testArray = [1,"s",2,5];
 	
 }
 

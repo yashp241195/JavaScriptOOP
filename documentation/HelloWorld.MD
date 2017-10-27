@@ -83,7 +83,9 @@ JavaScript based library.
            
 	
       }
+#### Output
 
+<img src="https://github.com/yashp241195/JavaScriptOOP/blob/master/documentation/img/out1.png" height="200" width="400">
 
 Now we are ready to move on to the visulization part which is the heart of this project.In next slide we will see how to visualize 
 premitive data types such as int,char,boolean,arrays etc

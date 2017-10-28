@@ -274,7 +274,7 @@ function init1DArray(length = null,value = 0){
 }
 
 
-function init2DArray(x, y, value = 0){
+function init2DArray(x = null , y = null , value = 0){
 	var matrix = [];
 
 	if(x != null && x!=0 && y != null && y!=0  ){
@@ -287,6 +287,7 @@ function init2DArray(x, y, value = 0){
 		return matrix;
 
 	}
-
+	
+	cout("Can't Create Array");
 	
 }

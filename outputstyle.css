@@ -15,20 +15,4 @@
 	padding:5px 10px;
 }
 
-.table_grid{
-	font-size:12px;
-	
-	border-collapse: collapse;
-}
-.table_grid > tr, td{
-	border: 1px solid black;
-	border-collapse: collapse;
-	padding:2px 2px;
-	color:blue;
 
-
-}
-
-.table_grid > tr, th{
-	color: red;
-}

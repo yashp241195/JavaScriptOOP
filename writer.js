@@ -76,9 +76,13 @@ function view(object,name = "undefined"){
 	}
 }
 
-function print1DArray(arr,fromIndex,toIndex,is2D = false,x="Data"){
+function print1DArray(arr,fromIndex = 0,toIndex = null,is2D = false,x="Data"){
 	if (arr != null){
 		maxIndex = arr.length - 1;
+		
+		if(toIndex == null){
+			toIndex = maxIndex;
+		}
 		
 		if(fromIndex <= toIndex){
 			
@@ -130,7 +134,7 @@ function print1DArray(arr,fromIndex,toIndex,is2D = false,x="Data"){
 		}
 	}
 }
-function print2DArray(arr,fromRowIndex,toRowIndex,fromColumnIndex,toColumnIndex,Objtype = "Array",isObj = false,isfloat =false){
+function print2DArray(arr,fromRowIndex=0,toRowIndex =null,fromColumnIndex=0,toColumnIndex=null,Objtype = "Array",isObj = false,isfloat =false){
 
 	floatLeft="";
 			
@@ -147,6 +151,13 @@ function print2DArray(arr,fromRowIndex,toRowIndex,fromColumnIndex,toColumnIndex,
 	
 		MaxRowIndex = arr.length - 1
 		MaxColIndex = arr[0].length - 1
+		
+		if(toRowIndex == null){
+			toRowIndex = MaxRowIndex;
+		}
+		if(toColumnIndex == null){
+			toColumnIndex = MaxColIndex;
+		}
 
 		if(fromRowIndex <= toRowIndex && fromRowIndex >= 0 && toRowIndex<= MaxRowIndex ){
 			

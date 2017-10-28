@@ -14,3 +14,20 @@
 	color:blue;
 	padding:5px 10px;
 }
+
+.table_grid{
+	
+	border-collapse: collapse;
+}
+.table_grid > tr, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding:2px 5px;
+	color:blue;
+
+
+}
+
+.table_grid > tr, th{
+	color: red;
+}

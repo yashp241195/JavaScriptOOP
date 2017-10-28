@@ -6,10 +6,8 @@
 function Node(data,next = null){
 	this.data = data;
 	this.next = next;
-	//this.testArray = [1,"s",2,5];
 	
 }
-
 
 // Class LinkedList
 function LinkedList(start = null){
@@ -38,17 +36,31 @@ function LinkedList(start = null){
 		cout("Printing the LinkedList : ","\n*2")
 		floatLeft = true;
 		var i = this.start;
+
+		var x = "<div style=\"margin: 5% 5% 5% 0%;\" ><div style=\"float:left;\" >&nbsp;<p style=\"font-size: 180%;\">START</p> &nbsp;&nbsp;</div>";
+		cout(x);
 		while(i != null){
+			
+
 			if(i.next == null){
 				// Donot apply float:left on the table of last Node
 				floatLeft =false;
 			}
+
+
+			x = "<div style=\"float:left;\" >&nbsp;<p style=\"font-size: 180%;\">&#8608;</p> &nbsp;&nbsp;</div>";
+		
+			cout(x);
 			printObject(i,0,floatLeft);	
+			
 			i = i.next;
 		}
+
+		cout("</div>");
 		
 		
 		
 	};
+
 	
 	

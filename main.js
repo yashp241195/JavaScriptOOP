@@ -24,10 +24,7 @@ function main(is){
 	
 	cout("smaller size");
 	newLine(3);
-	print1DGrid(arr,"arr");
-	newLine(3);
-	print2DGrid(arr2,"arr2");
-	newLine(3);
+	
 	
 	var car = {type:"Fiat", model:"500", color:"white"};
 	printObject(car);

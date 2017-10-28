@@ -18,11 +18,10 @@ function main(is){
 	arr = ["YY",12,11,11]; 
 	arr2 = [[9,8,7,6],[2,5,1,0]];
 	
-	cout("Larger size");
 	print1DArray(arr,0,3)
 	print2DArray(arr2,0,1,0,3);
 	
-	cout("smaller size");
+	
 	newLine(3);
 	
 	

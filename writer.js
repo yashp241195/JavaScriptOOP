@@ -258,3 +258,35 @@ function printObject(object,innerObjectelementNo = 0,isFloat = false){
 	print2DArray(matrix,0,1,0,maxIndex,ClassName,true,isFloat);
 	
 }
+
+function init1DArray(length = null,value = 0){
+	
+
+	if(length != null && length != 0){
+		array = new Array(length);
+
+		for (var i = 0; i < length; i++) {
+			array[i] = [value];
+		}
+		return array;		
+	}
+	cout("Can't Create Array");
+}
+
+
+function init2DArray(x, y, value = 0){
+	var matrix = [];
+
+	if(x != null && x!=0 && y != null && y!=0  ){
+
+		for(var i = 0; i < x ;i++){
+			var array = init1DArray(y,value);
+			matrix.push(array);
+		}
+
+		return matrix;
+
+	}
+
+	
+}

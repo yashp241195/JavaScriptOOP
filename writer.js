@@ -247,3 +247,63 @@ function printObject(object,innerObjectelementNo = 0,isFloat = false){
 	print2DArray(matrix,0,1,0,maxIndex,ClassName,true,isFloat);
 	
 }
+function print1DGrid(arr,GridName="Array",is2D = false,col="Data"){
+		if(arr != null){
+
+			if(is2D ==false){
+			table = "<div><table class =\"table_grid\">"
+			Index = "<tr><th style=\"color:purple;  font-size:16px;\"> Index </th>";
+
+			}
+					
+			tableData = "<tr style=\"font-size:20px;\"><td style=\"color:green; font-size:16px;\">"+col+"</td>";
+			
+			for(var i = 0;i < arr.length;i++){
+				if(is2D ==false){
+					Index += "<th>"+i+"</th>";
+				}
+				tableData +="<td>"+arr[i]+"</td>";
+			}
+			tableData += "</tr>";
+				
+			Identifier = "<div style = \"float:left; font-size:140%;\">"+GridName+"&#8608; &nbsp;&nbsp;&nbsp;</div>";
+			
+
+			if(is2D){
+				return tableData;
+			}else{
+
+				Index += "</tr>";
+				final = Identifier+table+Index+tableData+"</table></div>";
+			
+				cout(final);
+			}
+
+		}else{
+			cout("empty array");
+		}
+		
+		
+}
+
+function print2DGrid(arr,GridName="Array"){
+
+	table = "<div><table class =\"table_grid\">"
+	Index = "<tr><th style=\"color:purple;  font-size:16px;\"> Index </th>";
+	tableData = " ";
+	for(var i = 0; i < arr[0].length; i++){
+		Index += "<th>"+i+"</th>";
+	}
+	Index +="</tr>";
+
+	for(var j = 0;j < 2 ;j++){
+		tableData += print1DGrid(arr[j],GridName,true,0);
+		
+	}
+
+	Identifier = "<div style = \"float:left; font-size:140%;\">"+GridName+"&#8608; &nbsp;&nbsp;&nbsp;</div>";
+
+	final = Identifier + table+Index+tableData+"</table></div>";
+	cout(final);
+	
+}

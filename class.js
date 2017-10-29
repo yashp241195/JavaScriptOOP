@@ -36,7 +36,7 @@ function LinkedList(start = null){
 		cout("Printing the LinkedList : ","\n*2")
 		floatLeft = true;
 		var i = this.start;
-		printFloatedArrow();
+
 		while(i != null){
 			
 			printFloatedArrow();

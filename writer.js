@@ -44,7 +44,7 @@ function cout(string,end = null){
 						break;
 			case ",": delimiter +=', ';
 						break;
-						
+									
 			default:  delimiter += ' ';
     		}
 		}
@@ -54,6 +54,7 @@ function cout(string,end = null){
 }
 
 function newLine(string = 1){
+	
 	cout("","\n*"+string.toString());
 }
 
@@ -76,13 +77,15 @@ function view(object,name = "undefined"){
 	}
 }
 
-function print1DArray(arr,fromIndex = 0,toIndex = null,is2D = false,x="Data"){
+function print1DArray(arr,fromIndex = 0,toIndex = null,is2D = false,col="Data"){
 	if (arr != null){
+
 		maxIndex = arr.length - 1;
 		
 		if(toIndex == null){
 			toIndex = maxIndex;
 		}
+
 		
 		if(fromIndex <= toIndex){
 			
@@ -102,7 +105,7 @@ function print1DArray(arr,fromIndex = 0,toIndex = null,is2D = false,x="Data"){
 				}
 
 							
-				tableData = "<tr class = \"table_row\"><th style=\"color:green;\">"+x.toString()+"</th>";
+				tableData = "<tr class = \"table_row\"><th style=\"color:green;\">"+col.toString()+"</th>";
 
 				for(i = fromIndex; i <= toIndex; i++){
 					if(is2D == false){
@@ -134,14 +137,18 @@ function print1DArray(arr,fromIndex = 0,toIndex = null,is2D = false,x="Data"){
 		}
 	}
 }
-function print2DArray(arr,fromRowIndex=0,toRowIndex =null,fromColumnIndex=0,toColumnIndex=null,Objtype = "Array",isObj = false,isfloat =false){
+function print2DArray(arr,fromRowIndex = 0,toRowIndex = null ,fromColumnIndex = 0,toColumnIndex =null,Objtype = "Array",isObj = false,isfloat =false){
+
 
 	floatLeft="";
 			
 	if(arr != null){
 		if(!isObj){
-			newLine();
-			newLine();
+			if(Objtype == "Array"){
+				newLine();
+				newLine();
+			}
+			
 		}
 
 		if(isfloat){
@@ -151,13 +158,14 @@ function print2DArray(arr,fromRowIndex=0,toRowIndex =null,fromColumnIndex=0,toCo
 	
 		MaxRowIndex = arr.length - 1
 		MaxColIndex = arr[0].length - 1
-		
+
 		if(toRowIndex == null){
 			toRowIndex = MaxRowIndex;
 		}
 		if(toColumnIndex == null){
 			toColumnIndex = MaxColIndex;
 		}
+
 
 		if(fromRowIndex <= toRowIndex && fromRowIndex >= 0 && toRowIndex<= MaxRowIndex ){
 			
@@ -274,7 +282,7 @@ function init1DArray(length = null,value = 0){
 }
 
 
-function init2DArray(x = null , y = null , value = 0){
+function init2DArray(x, y, value = 0){
 	var matrix = [];
 
 	if(x != null && x!=0 && y != null && y!=0  ){
@@ -287,7 +295,17 @@ function init2DArray(x = null , y = null , value = 0){
 		return matrix;
 
 	}
+
 	
-	cout("Can't Create Array");
-	
+}
+
+
+function printFloatedArrow(){
+	ftext = "<div style=\"float:left;\" >&nbsp;<p style=\"font-size: 180%;\">&#8608;</p> &nbsp;&nbsp;</div>";
+
+	cout(ftext,"\t*2");
+}
+
+function clearFloat(){
+	cout("<div style=\"clear:both; \"></div>");
 }

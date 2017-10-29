@@ -26,10 +26,9 @@ This is an open source project which helps to visualize the algorithms easily.
          <title>Output Console</title>
          <!-- writer.js is mandatory as it contains input output functions and it should be added first -->
          <script src = "writer.js"></script>
-         <!-- 
-         example.js is auxillary, it contains class to implement LinkedList for the purpose of illustration
-         we can add our own script in between these two scipt in order to define custom class and functions
-         -->
+         <!-- example.js is auxillary, it contains class to implement LinkedList for the purpose of illustration
+            we can add our own script in between these two scipt in order to define custom class and functions
+            -->
          <script src = "example.js"></script>
          <!-- main.js is mandatory as it contains main() function and it should be added last -->
          <script src = "main.js"></script>

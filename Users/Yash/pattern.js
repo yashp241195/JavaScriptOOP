@@ -14,6 +14,9 @@ function printReverseNumbers(n){
 function pattern(){
 
 	var n = 3;
+	newLine(3);
+	
+	cout("<center><h2>Pattern Printing :  </h2></center>","\n*3");
 
 
 	for (var i = 0; i <= n ; i++) {

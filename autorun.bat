@@ -14,9 +14,9 @@ SET SublimePath="C:\Program Files\Sublime Text 3\subl.exe"
 SET YourFilePath=""
 
 :: if you are not storing autorun.bat in the main directory then you 
-:: must mention the path as given below
+:: must mention the path as given below otherwise it is not necessary
 
-::SET YourFilePath "C:\Users\Yash\Desktop\VisualizeJS\VisualizeJS-master\
+::SET YourFilePath="C:\Users\Yash\Desktop\VisualizeJS\VisualizeJS-master\
 
 :: Query for execution of a program ,please do not touch this
 

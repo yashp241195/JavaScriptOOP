@@ -39,13 +39,12 @@ function main(is){
 			
 	var d = false;
 	view(d,"d");
+			
+	mazeandrat();
 	
 	printCypher();
-
 	
 	pattern();
-	
-	mazeandrat();
 
 	newLine(5);		
 }

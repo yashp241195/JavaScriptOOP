@@ -41,6 +41,8 @@ function main(is){
 	view(d,"d");
 	
 	pattern();
+	
+	mazeandrat();
 
 	newLine(5);		
 }

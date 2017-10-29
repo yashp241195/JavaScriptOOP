@@ -51,4 +51,14 @@ function cypher(){
 	 	}
 
  };
-
+	
+	function printCypher(){
+		cout("<h3><center>Ceaser Cypher</center></h3>","\n*2")
+		var text = "Yash";
+		view(text,"Original","\n*2");
+		c = new cypher();
+		var enc = c.getCyper(text);
+		view(enc,"Encrypted","\n*2");
+		var dec = c.getCyper(enc,"dec");
+		view(dec,"Decrypted","\n*2");
+	}

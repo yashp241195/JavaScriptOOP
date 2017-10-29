@@ -39,6 +39,8 @@ function main(is){
 			
 	var d = false;
 	view(d,"d");
+	
+	pattern();
 
 	newLine(5);		
 }

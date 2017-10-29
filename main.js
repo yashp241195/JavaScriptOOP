@@ -40,6 +40,9 @@ function main(is){
 	var d = false;
 	view(d,"d");
 	
+	printCypher();
+
+	
 	pattern();
 	
 	mazeandrat();

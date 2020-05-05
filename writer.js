@@ -16,7 +16,7 @@ function cin(arr){
 }
 
 
-function cout(string,end = null){
+function cout(string,end = null, color=null, identity=null){
 	
 	delimiter = '';
 	counter = 1;
@@ -50,7 +50,8 @@ function cout(string,end = null){
 		}
 	
    	var out = string + delimiter;
-	document.write(out);
+
+	document.write("<span id='#"+identity+"' style='color:"+color+"'>"+out+"</span>");
 }
 
 function newLine(string = 1){
